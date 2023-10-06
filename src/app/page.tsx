@@ -1,9 +1,11 @@
-import Image from "next/image";
+import { Home } from "@/app/components";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <h1>Hello world</h1>
+    <main className="w-screen h-screen">
+      <section className="max-w-global m-global">
+        <Home />
+      </section>
     </main>
   );
 }
