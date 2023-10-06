@@ -1,14 +1,7 @@
-import { Home } from "@/app/components";
-import { ParticlesBackground } from "./components/ParticlesBackground";
+import { defaultLocale } from "@/i18n";
+import { redirect } from "next/navigation";
 
-export default function HomePage() {
-  return (
-    <main className="w-screen h-screen">
-      <ParticlesBackground />
-
-      <section className="max-w-global m-global">
-        <Home />
-      </section>
-    </main>
-  );
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect(defaultLocale);
 }
