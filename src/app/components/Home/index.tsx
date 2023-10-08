@@ -5,7 +5,7 @@ export const Home = () => {
   const t = useTranslations("Home");
 
   return (
-    <div className="w-full h-screen flex items-center justify-center flex-col relative">
+    <div className="w-full h-[100dvh] flex items-center justify-center flex-col relative">
       <h1 className="text-5xl mb-4 text-shadow">{t("myName")}</h1>
       <h2 className="text-2xl text-purple-500">{t("responsibility")}</h2>
 
