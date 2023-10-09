@@ -9,7 +9,7 @@ export default function HomePage() {
         <Home />
       </section>
 
-      <section className="w-full">
+      <section className="w-full mt-12">
         <Experiencies />
       </section>
     </main>
