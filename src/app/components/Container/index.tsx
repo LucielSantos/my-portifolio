@@ -5,5 +5,5 @@ interface Props {
 }
 
 export const Container = ({ children }: Props) => {
-  return <div className="max-w-global m-global">{children}</div>;
+  return <div className="max-w-global m-global px-4">{children}</div>;
 };
