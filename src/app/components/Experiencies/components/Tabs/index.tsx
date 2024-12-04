@@ -28,9 +28,10 @@ export const Tabs = ({ experiencies }: Props) => {
     <div className="flex gap-16">
       <div className="w-full max-w-min relative">
         <div
-          className={indicator({
-            className: `translate-y-[${activeTab * 100}%]`,
-          })}
+          style={{
+            transform: `translateY(${activeTab * 100}%)`,
+          }}
+          className={indicator()}
         />
 
         {experiencies.map((experiencie, i) => (
