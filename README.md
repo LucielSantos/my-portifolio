@@ -48,6 +48,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - next-intl
   - Internacionalização para aplicações Next.js
   - Internacionalização dos Metadados (title e description da página)
+- tsparticles
+  - Background interativo
 
 ### Features Next.JS
 

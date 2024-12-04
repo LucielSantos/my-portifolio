@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { redirect } from "next/navigation";
 import { defaultLocale, locales } from "@/i18n/request";
 import { getTranslations } from "next-intl/server";
+import { ParticlesBackground } from "../components";
 
 const inter = Nunito({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default async function LocaleLayout(props: Props) {
       <body className={inter.className}>
         {children}
 
+        <ParticlesBackground />
         <Analytics />
       </body>
     </html>
