@@ -1,4 +1,5 @@
 import { Experiencies, Home, Skills } from "@/app/components";
+import { SocialMedias } from "../components/SocialMedias";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,10 @@ export default function HomePage() {
 
       <section className="w-full mt-16">
         <Skills />
+      </section>
+
+      <section className="w-full mt-16">
+        <SocialMedias />
       </section>
     </main>
   );
