@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "React",
+    "description": "React é uma biblioteca JavaScript de código aberto e gratuita para construção de interfaces de usuário ou componentes de UI.",
+    "icon": "React"
+  },
+  {
+    "id": "2",
+    "name": "Next JS",
+    "description": "Next.js é um framework de desenvolvimento web front-end gratuito e de código aberto que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicações web baseadas em React.",
+    "icon": "NextJS"
+  },
+  {
+    "id": "3",
+    "name": "Chakra UI",
+    "description": "Chakra UI é uma biblioteca de componentes simples, modular e acessível que fornece os blocos de construção necessários para criar suas aplicações React.",
+    "icon": "ChakraUI"
+  },
+  {
+    "id": "4",
+    "name": "ElectronJ S",
+    "description": "Electron é uma estrutura de código aberto desenvolvida pela GitHub para criar aplicativos de desktop multiplataforma com HTML, CSS e JavaScript.",
+    "icon": "ElectronJS"
+  },
+  {
+    "id": "5",
+    "name": "Tailwind CSS",
+    "description": "Tailwind CSS é uma estrutura de design CSS de baixo nível, altamente personalizável e pronta para uso que vem com classes utilitárias pré-construídas.",
+    "icon": "TailwindCSS"
+  },
+  {
+    "id": "6",
+    "name": "TypeScript",
+    "description": "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem estática opcional à linguagem.",
+    "icon": "TypeScript"
+  },
+  {
+    "id": "7",
+    "name": "JavaScript",
+    "description": "JavaScript é uma linguagem de programação de alto nível, interpretada e orientada a objetos comumente usada para criar efeitos interativos em páginas web.",
+    "icon": "JavaScript"
+  },
+  {
+    "id": "8",
+    "name": "Material UI",
+    "description": "Material-UI é uma biblioteca de componentes simples e personalizável para construir aplicações React mais rápidas, bonitas e acessíveis.",
+    "icon": "Miui"
+  }
+]

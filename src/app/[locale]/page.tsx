@@ -1,4 +1,4 @@
-import { Experiencies, Home, ParticlesBackground } from "@/app/components";
+import { Experiencies, Home, Skills } from "@/app/components";
 
 export default function HomePage() {
   return (
@@ -9,6 +9,10 @@ export default function HomePage() {
 
       <section className="w-full mt-12">
         <Experiencies />
+      </section>
+
+      <section className="w-full mt-16">
+        <Skills />
       </section>
     </main>
   );
