@@ -1,18 +1,15 @@
 import "../globals.css";
-import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import { useLocale } from "next-intl";
 import { redirect } from "next/navigation";
-import { defaultLocale, locales } from "@/i18n";
-import { getTranslator } from "next-intl/server";
+import { defaultLocale, locales } from "@/i18n/request";
+import { getTranslations } from "next-intl/server";
+import { ParticlesBackground } from "../components";
 
 const inter = Nunito({ subsets: ["latin"] });
 
-export async function generateMetadata({
-  params: { locale },
-}: Omit<Props, "children">) {
-  const t = await getTranslator(locale, "Metadata");
+export async function generateMetadata() {
+  const t = await getTranslations("Metadata");
 
   return {
     title: t("title"),
@@ -22,12 +19,18 @@ export async function generateMetadata({
 
 interface Props {
   children: React.ReactNode;
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
-export default function LocaleLayout({ children, params: { locale } }: Props) {
+export default async function LocaleLayout(props: Props) {
+  const params = await props.params;
+
+  const { locale } = params;
+
+  const { children } = props;
+
   // Validate that the incoming `locale` parameter is valid
   const isValidLocale = locales.some((cur) => cur === locale);
   if (!isValidLocale) redirect(defaultLocale);
@@ -37,6 +40,7 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
       <body className={inter.className}>
         {children}
 
+        <ParticlesBackground />
         <Analytics />
       </body>
     </html>
