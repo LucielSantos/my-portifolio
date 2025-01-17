@@ -1,6 +1,6 @@
 "use client";
 
-import { Experiencie } from "@/types/experiencies";
+import { Experiencie } from "@prisma/client";
 import { useRef, useState } from "react";
 import { tv } from "tailwind-variants";
 
