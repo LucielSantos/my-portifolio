@@ -1,10 +1,11 @@
-import { useTranslations } from "next-intl";
 import { Container, Title } from "..";
 import { Tabs } from "./components";
-import experiencies from "./mock.json";
+import { getExperiencies } from "@/prisma/experiencies";
+import { getTranslations } from "next-intl/server";
 
-export const Experiencies = () => {
-  const t = useTranslations("Experiencies");
+export const Experiencies = async () => {
+  const t = await getTranslations("Experiencies");
+  const experiencies = await getExperiencies();
 
   return (
     <div>
