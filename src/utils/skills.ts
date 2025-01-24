@@ -1,19 +1,19 @@
-import ReactIcon from "../assets/react.svg";
+import { FaReact } from "react-icons/fa";
 import MiuiLogo from "../assets/miui.svg";
-import NextJSLogo from "../assets/nextjs.svg";
-import ChakraLogo from "../assets/chakraui.svg";
-import ElectronJSLogo from "../assets/electronjs.svg";
-import TailwindLogo from "../assets/tailwind.svg";
-import TypescriptLogo from "../assets/typescript.svg";
-import JavascriptLogo from "../assets/javascript.svg";
+import { SiNextdotjs } from "react-icons/si";
+import { SiChakraui } from "react-icons/si";
+import { IoLogoElectron } from "react-icons/io5";
+import { SiTailwindcss } from "react-icons/si";
+import { FaJsSquare } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 
 export const skillIcon = {
-  React: ReactIcon,
-  Miui: MiuiLogo,
-  NextJS: NextJSLogo,
-  ChakraUI: ChakraLogo,
-  ElectronJS: ElectronJSLogo,
-  TailwindCSS: TailwindLogo,
-  TypeScript: TypescriptLogo,
-  JavaScript: JavascriptLogo,
+  react: FaReact,
+  miui: MiuiLogo,
+  nextjs: SiNextdotjs,
+  chakraui: SiChakraui,
+  electronjs: IoLogoElectron,
+  tailwindcss: SiTailwindcss,
+  typescript: SiTypescript,
+  javascript: FaJsSquare,
 };
