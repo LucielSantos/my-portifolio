@@ -15,5 +15,9 @@
   },
   "SocialMedias": {
     "title": "Redes Sociais"
+  },
+  "Footer": {
+    "description": "Desenvolvido e mantido por Luciel Santos",
+    "year": "© 2025"
   }
 }

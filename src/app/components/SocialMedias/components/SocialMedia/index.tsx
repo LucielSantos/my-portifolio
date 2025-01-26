@@ -8,12 +8,14 @@ interface Props {
 
 export const SocialMedia = ({ icon: Icon, link, text }: Props) => {
   return (
-    <div className="flex flex-row items-center space-x-4">
+    <a
+      target="_blank"
+      href={link}
+      className="text-xl flex flex-row items-center gap-2 transition-all duration-300 hover:brightness-75"
+    >
       <Icon size={50} className="text-purple-500" />
 
-      <a target="_blank" href={link} className="text-xl">
-        {text}
-      </a>
-    </div>
+      {text}
+    </a>
   );
 };
