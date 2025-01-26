@@ -8,7 +8,7 @@ import {
 
 export default function HomePage() {
   return (
-    <main className="w-screen h-[100dvh] overflow-auto">
+    <main className="w-screen h-[100dvh] overflow-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-white/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-purple-500/50">
       <section className="w-full">
         <Home />
       </section>
